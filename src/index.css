@@ -1,0 +1,167 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#waiting
+{
+  max-width: 40vw;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  display: none;
+  font-size: 16px;
+  color: yellow;
+  border: 1px solid yellow;
+  border-radius: 5px;
+}
+
+#show
+{
+  max-width: 40vw;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  position: absolute;
+  top:100px;
+  right: 10px;
+  display: none;
+  font-size: 16px;
+  color: yellow;
+  border: 1px solid yellow;
+  border-radius: 5px;
+}
+
+#connected
+{
+  max-width: 40vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  display: none;
+  font-size: 16px;
+  color: yellow;
+}
+
+.addressBox
+{
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid yellow;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+#connected span{
+  color: white;
+}
+
+#total
+{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+}
+
+#total:hover
+{
+  background-color: yellow;
+  color: black;
+}
+
+#your
+{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  display: none;
+  text-align: center;
+}
+
+#submit
+{
+display: none;
+position: absolute;
+cursor: pointer;
+margin-top: 16px;
+padding: 8px;
+border-radius: 5px;
+border: 1px solid yellow;
+background: transparent;
+color: white;
+font-size: 20px;
+top: 80vh;
+left: 66vw;
+}
+
+#submit:hover
+{
+  color: black;
+  background-color: yellow;
+}
+
+#messageBox
+{
+  display: none;
+  margin-top: 20px;
+  
+  border: 1px solid yellow;
+  background-color: transparent;
+  outline: none;
+  color: yellow;
+  font-size: 20px;
+  margin-bottom:30px;
+
+  height: 10vh;
+}
+
+@media screen and (max-height: 880px) and (max-width: 600px) {
+  .mainContainer {
+    margin-top: 30vh;
+  }
+
+  /* .datacontainer {
+    margin-top: 30vh;
+  } */
+}

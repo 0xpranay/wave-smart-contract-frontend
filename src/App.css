@@ -1,0 +1,127 @@
+body
+{
+  background-color: black;
+}
+
+.mainContainer {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.dataContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 60vw;
+  margin-top: 20vh;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: white;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+.waveButton {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid yellow;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+.dataContainer
+{
+  margin-top:50vh;
+}
+.waveButton:hover
+{
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: yellow;
+  color: black;
+}
+
+.waveButton:hover #primary
+{
+  display: none;
+}
+
+.waveButton:hover #secondary
+{
+  display: inline;
+}
+
+.header:hover {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.upperRight
+{
+  width: 15vw !important;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#color-text{
+	background: linear-gradient(to right, #FFF 0%, yellow 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.box
+{
+  background-color: yellow;
+  color: black;
+  border: 1px solid yellow;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.dataContainer *
+{
+  width: 100%;
+}
+
+.waveButton #secondary
+{
+  display: none;
+  text-align: center;
+}
+
+@media screen and (max-height: 880px) and (max-width: 600px) {
+  .mainContainer {
+    margin-top: 30vh;
+  }
+
+  /* .datacontainer {
+    margin-top: 30vh;
+  } */
+}
