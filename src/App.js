@@ -131,7 +131,7 @@ const App = () => {
         const account = accounts[0];
         console.log("Found an authorized account:", account);
         setCurrentAccount(account);
-        document.getElementById('connected').innerHTML += accounts[0];
+        document.getElementById('connected').innerHTML = accounts[0];
         document.getElementById('connected').style.display = "inline";
         document.getElementById('messageBox').style.display = "inline";
 
